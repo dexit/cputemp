@@ -1,4 +1,4 @@
-# cputemp
+# cpu temp
 Simple BATCH CPU TEMP monitor script with SMTP send through PoSH
 
 It works if you are running it inside a Windows AD enviroment.
