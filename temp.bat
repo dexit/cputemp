@@ -6,16 +6,16 @@
 set maxtemp=25
 
 :: Please set Recipients
-set to=rmantejs@therange.co.uk
+set to=admin@domain.tld
 
 :: Please set From
-set from=RFCFS@HIGH-TEMP-ALERT
+set from=Mwhatever@whatever.tld
 
 :: Please set subject
-set subject=RFCFS OVERHEAT WARNING
+set subject=OVERHEAT WARNING
 
 :: Set SMTP server now outlook.therange.local
-set smtp=172.15.10.224
+set smtp=127.0.0.1
 
 
 for /f "delims== tokens=2" %%a in (
@@ -26,7 +26,7 @@ for /f "delims== tokens=2" %%a in (
 
 :: This is here because the TEMP is set to VAR only after the above lines.
 :: Please set body
-set body=RFCFS - Heat %degrees_celsius% C
+set body=Heat %degrees_celsius% C
 
 if %degrees_celsius% geq %threshold% goto sendmail
 
