@@ -1,5 +1,5 @@
 @echo off
-:: Made by Rihards Mantejs
+:: Made by Rihards 'dExIT' Mantejs
 :: Works on Fujitsu E420d
 :: Other MoBo's etc could need a different WMIC call.
 :: PLEASE SET MAX TEMP
